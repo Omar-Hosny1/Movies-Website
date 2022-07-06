@@ -1,0 +1,56 @@
+.poster-box {
+  margin-right: 10px;
+  width: 250px;
+  position: relative;
+  height: 330px;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 5px 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-width: 50px;
+  border-color: aliceblue;
+  margin: 10px auto;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+.poster-box:hover {
+  border: 2px solid white;
+}
+.poster-box__img {
+  position: relative;
+}
+.poster-box__img img {
+  height: 300px;
+  border-radius: 7px;
+  transition: 0.3s;
+  margin: 0px 0px -7px;
+}
+.poster-box__img span {
+  position: absolute;
+  bottom: -7px;
+  right: -10px;
+  background-color: #f3d447;
+  color: #1a1a1a;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.poster-box__desc {
+  width: 80%;
+  margin: 7px 0 0 0;
+}
+.poster-box__desc span {
+  color: #0fa573;
+  font-size: 12px;
+}
+.poster-box__desc h4 {
+  margin: 5px 0 0;
+  text-transform: capitalize;
+  font-size: 18px;
+}

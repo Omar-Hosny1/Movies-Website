@@ -1,0 +1,152 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav {
+  padding: 7px 70px;
+  position: relative;
+}
+nav {
+  background-color: #080913;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+}
+nav ul li {
+  transition: 0.3s;
+  position: relative;
+}
+nav ul li::before {
+  content: "";
+  background-color: white;
+  height: 3px;
+  border-radius: 7px;
+  width: 0%;
+  position: absolute;
+  transition: 0.3s;
+  bottom: -27.5px;
+  margin-left: 10px;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav img {
+  max-width: 120px;
+  margin: 0;
+}
+.icon {
+  position: relative;
+  top: 2px;
+  margin: 5px 5px 0 0;
+}
+.react-icon {
+  background-color: white;
+  color: #080913;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: absolute;
+  right: 65px;
+}
+
+.total-mov {
+  position: absolute;
+  right: 58px;
+  color: rgb(18, 9, 42);
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(214, 214, 214);
+  padding: 5px;
+  border-radius: 7px;
+  z-index: 1;
+}
+.bars {
+  position: relative;
+  /* left: 237px; */
+  display: none;
+}
+.show-nav {
+  right: 0;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .main-nav {
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .main-nav {
+    padding: 7px 10px;
+  }
+  .bars {
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+    cursor: pointer;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: -340px;
+    top: 70px;
+    background-color: #080913;
+    padding: 240px 100px;
+    z-index: 5;
+    transition: 0.3s;
+  }
+
+  nav ul li {
+    z-index: 1;
+    margin: 10px 0;
+  }
+  nav ul li a {
+    z-index: 1;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  nav ul li::before {
+    content: "";
+    background-color: white;
+    height: 3px;
+    border-radius: 7px;
+    width: 0%;
+    position: absolute;
+    transition: 0.3s;
+    bottom: -5px;
+    margin-left: 0;
+  }
+  nav ul li:hover::before {
+    width: 30%;
+  }
+}
+@media (max-width: 468px) {
+  nav ul {
+    padding: 310px 50px;
+    display: none;
+  }
+}

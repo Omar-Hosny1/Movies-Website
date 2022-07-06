@@ -1,0 +1,45 @@
+.favorite-container {
+  position: absolute;
+  background-color: #080913;
+  min-width: 450px;
+  height: 450px;
+  top: 60px;
+  right: 70px;
+  z-index: 2;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+.cart-close-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  background-color: white;
+  padding: 5px;
+  color: black;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+}
+.cart-no-mov {
+  text-align: center;
+  margin: 150px 0 0;
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .favorite-container {
+    min-height: 430px;
+    height: 400px;
+    position: absolute;
+    max-width: 300px;
+  }
+}
+@media (max-width: 468px) {
+  .favorite-container {
+    min-height: 430px;
+    height: 400px;
+    position: absolute;
+    max-width: 220px;
+  }
+}
