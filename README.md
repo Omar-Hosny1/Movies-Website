@@ -7,4 +7,5 @@ This is an application where you can show all trending movies and you can also a
 1- Open You Terminal and write "npm install" then "npm start"
 
 
-## LIVE-SERVER => https://gorgeous-taiyaki-116ee9.netlify.app
+## LIVE-SERVER => https://astonishing-begonia-4e1c64.netlify.app/
+
